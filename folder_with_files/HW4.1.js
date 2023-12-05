@@ -1,5 +1,3 @@
-const { reverse } = require("dns");
-
 // Reverce 
 function reverseString(str) {
   return str.split('').reverse().join('');
