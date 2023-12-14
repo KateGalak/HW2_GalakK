@@ -30,7 +30,7 @@ console.log(coolCar.batch)
 console.log(bird["freadom bird"])
 console.log(personInfo.job.position)
 
-//створити 3 обʼєкти через Object()
+// 2) створити 3 обʼєкти через Object()
 
 // Спосіб 1- через конструктор Object
 let dayWeek = new Object();
@@ -63,7 +63,7 @@ console.log(oscar.winner)
 console.log(car.owner.age)
 
 
-//3 //створити обʼєкт на базі протиту іншого обʼєку (Object.create(інший_оʼєкт), або через __prototype__)
+// 3) створити обʼєкт на базі протиту іншого обʼєку (Object.create(інший_оʼєкт), або через __prototype__)
 
 let carBased = {
     engine: true,
@@ -116,6 +116,16 @@ let person = {
 }
 
 engineer.__proto__ = person
+
+console.log("Engineer details:");
+for (const key in engineer) {
+  console.log(`${key}: ${engineer[key]}`);
+}
+
+console.log("QA engineer details:");
+for (const key in QA_engineer) {
+  console.log(`${key}: ${QA_engineer[key]}`);
+}
 
 console.log("Person details:");
 for (const key in person) {
